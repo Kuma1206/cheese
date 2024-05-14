@@ -1,0 +1,923 @@
+
+
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+}
+
+img {
+	float: left;
+}
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+
+
+
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+---------------------*/
+
+
+/*
+---------------------*/
+.nav {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	z-index: 9999;
+	opacity: 0.8;
+	padding: 0px;
+	z-index: 999;
+}
+
+.nav2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 130%;
+	height: 80px;
+	font-size: small;
+	background-color: white;
+	position: fixed;	
+	
+}
+
+.img-logo {
+	width: 200px;
+	/* z-index: 0; */
+}
+
+.nav-fade {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transform: translateY(20px);
+	transition: all 1.5s 3s ease-out;
+	color: #f01f1f;
+}
+
+#top {
+	width: 70%;
+	color: #000;
+	/* z-index: 0; */
+}
+
+.h-imgbox {
+	width: 0%;
+	padding: 0px;
+	margin: 0px;
+	/* z-index: 0; */
+}
+
+.h_img {
+	width: 3em;
+	height: 10px;
+}
+
+.heder_box{
+	text-shadow: 3px 3px 3px #fff;;
+}
+
+header{
+	position: relative;
+	width: 100%;
+	padding: 0px;
+	z-index: 999;
+}
+
+.h-menu {
+	padding: 14px;
+	color: #0f0f0f;
+	/* background-color: #a7a3a3; */
+}
+
+.h-menu:hover {
+	color: red;
+}
+
+#contact{
+	width: 675px;
+	height: px;
+	margin: 0 auto;
+	padding-bottom: 96px;
+}
+
+.c-tact {
+	padding-top: 56px;
+	padding-bottom: 80px;
+}
+
+.c-h2 {
+	display: flex;
+	justify-content: center;
+	font-size: 30px;
+	font-weight: bold;
+	padding-bottom: 24px;
+	text-decoration: underline;
+}
+
+.c-1 {
+	padding-bottom: 56px;
+	display: flex;
+	justify-content: center;
+}
+
+.c-2 {
+	display: flex;
+	justify-content: center;
+}
+
+.c-3 {
+	padding-top: 30px;
+}
+
+.n-1 {
+	display: flex;
+	justify-content: start;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.v-1 {
+	width: 40%;
+	margin-right: 10px;
+}
+
+.v-2 {
+	width: 600px;
+}
+	
+
+.v-5 {
+	width: 50%;
+	margin-top: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+}
+
+.v-6 {
+	width: 600px;
+}
+
+.n-2 {
+	display: flex;
+	justify-content: start;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+
+
+.n-5 {
+width: 50%;
+margin-right: 10px;
+}
+
+
+.shibou {
+	height: 128px;
+	width: 70%;
+	margin-right: 120px;
+}
+
+#name2{
+	outline: solid 2px #bfbfbf;
+	width: 382px;
+	height: 36px;
+	border-radius: 2px;
+}
+
+#kome2 {
+
+	outline: solid 2px #bfbfbf;
+	width: 328px;
+	height: 108px;
+	border-radius: 2px;
+}
+
+/* #shibo1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 120px;
+	/* margin-right: 120px; */
+/* }  */
+
+#shibo2 {
+	width: 700px;
+}
+
+#kigyo{
+	width: 382px;
+}
+
+.c-box {
+	display: flex;
+	justify-content: start;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+
+.s-1 {
+	display: flex;
+	justify-content: start;
+	padding-bottom: 40px;
+}
+
+.b-1 {
+	display: flex;
+	justify-content: center;
+}
+
+.b-2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: yellow;
+	height: 40px;
+	width: 90px;
+	margin-top: 56px;
+	margin-bottom: 50px;
+	border-radius: 3px;
+}
+
+.b-2:hover {
+	background-color: rgb(145, 145, 23);
+	text:white
+}
+
+input.cb[type="checkbox"] {
+	position: relative;
+	height: 24px;
+	width: 24px;
+	margin-right: 20px;
+	display: inline-block;
+	border-radius: 2px;
+	border: 2px solid #ccc;
+	background: #bfbfbf;
+	-webkit-appearance: none; 
+	appearance: none; 
+}
+
+
+input.cb[type="checkbox"]:checked {
+	border: none;
+	background-image: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' width='16' height='16'><rect fill='%23f00' width='16' height='16'/><path fill='none' stroke='%23fff' stroke-width='2' d='M12.6,5.17l-5.66,5.66L3.4,7.29'/></svg>");
+	accent-color: darkcyan;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.a-text {
+	margin-top: 112px;
+	margin-bottom: 80px;
+	width: 80%;
+}
+
+.a-h2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: rgb(238, 238, 12);
+	font-size: xx-large;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.p-1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
+
+.p-2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 40px;
+
+}
+
+.p-3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.p-4 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.p-5 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.p-4
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* 上スクロールボタン */
+.pagetop {
+	height: 50px;
+	width: 50px;
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	background: rgba(0, 0, 0, 0);
+	border: solid 2px #a7a3a3;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	z-index: 2;
+}
+
+.pagetop__arrow {
+	height: 10px;
+	width: 10px;
+	border-top: 3px solid #a7a3a3;
+	border-right: 3px solid #a7a3a3;
+	transform: translateY(20%) rotate(-45deg);
+}
+
+
+/* 画像を無限ループ */
+@keyframes infinity-scroll-left {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+.scroll-infinity {
+	z-index: -99999;
+	flex-wrap: wrap;
+}
+
+.scroll-infinity__wrap {
+	display: flex;
+	/* flex-wrap: wrap; */
+	overflow: hidden;
+	z-index: 0;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	z-index: -99999;
+}
+
+.scroll-infinity__list {
+	display: flex;
+	/* flex-wrap: wrap; */
+	list-style: none;
+	padding: 0
+}
+
+.scroll-infinity__list--left {
+	animation: infinity-scroll-left 20s infinite linear 0.5s both;
+}
+
+.scroll-infinity__item {
+	width: calc(100vw / 4);
+}
+
+.scroll-infinity__item>img {
+	width: 100%;
+}
+
+.c-text {
+	padding-top: 64px;
+	padding-bottom: 64px;
+} 
+
+.c-title {
+	display: flex;
+	justify-content: center;
+	font-size: xx-large;
+	font-weight: 700;
+	text-decoration: underline;
+	padding-bottom: 24px;
+}
+
+.c-p {
+	display: flex;
+	justify-content: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.c-box1 {
+	display: flex;
+	justify-content: center;
+	height: 240px;
+	margin: 40px;
+}
+
+.c-box2 {
+	display: flex;
+	justify-content: end;
+	width: 50%;
+}
+
+.c-box3 {
+	display: flex;
+	justify-content: start;
+	width: 50%;
+	padding-left: 80px;
+	padding-right: 80px;
+	font-family: sans-serif;
+}
+
+.t-text{
+	width: 80%;
+	text-shadow: 10px 10px 10px #c0c0c0;
+}
+
+.c-h1 {
+	font-size:x-large;
+	font-weight: 500;
+}
+
+.c-p1 {
+	padding-top: 20px;
+}
+
+.c-box4 {
+	display: flex;
+	align-items: center;
+	height: 328px;
+	/* margin-left: 40px; */
+	/* margin-right: 40px; */
+	margin-top: 128;
+	/* margin-bottom: 128px; */
+}
+
+.c-box5 {
+	width: 50%;
+	display: flex;
+	justify-content: end;
+	align-items: end;
+	padding: 80px;
+	font-family: sans-serif;
+}
+
+.c-box6 {
+	display: flex;
+	justify-content: start;
+	width: 50%;
+}
+
+.t-text3 {
+	display: flex;
+	justify-content: end;
+	flex-direction: column;
+	width: 80%;
+	text-shadow: 10px 10px 10px #c0c0c0;
+}
+
+.c-news {
+	padding-top: 120px;
+	padding-bottom: 100px;
+}
+
+.t-news {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: rgb(216, 216, 38);
+	font-size: x-large;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.st-news {
+	display: flex;
+	justify-content: center;
+	padding-top: 16px;
+}
+
+.n-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.n-box1 {
+	width: 290px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin: 20px;
+}
+
+.n-text1 {
+	padding-top: 32px;
+	padding-bottom: 24px;
+}
+
+.ac-box {
+	padding-top: 64px;
+	padding-bottom: 64px;
+	background-color: rgb(241 245 249);
+}
+
+.ac-h2 {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 24px;
+	font-size: x-large;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.ac-p {
+	display: flex;
+	justify-content: center;
+	/* background-color:rgb(241 245 249) ; */
+}
+
+.ac-box2 {
+	display: flex;
+	justify-content: center;
+	background-color: rgb(241 245 249);
+}
+
+.chizu {
+	width: 50%;
+	padding: 40px;
+}
+
+.ac-box3 {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 50%;
+	background-color: rgb(241 245 249);
+}
+
+.ac-box4 {
+	display: flex;
+	justify-content: center;
+}
+
+.ac-p1 {
+	width: 96px;
+	margin-right: 48px;
+}
+
+.ac-p2 {
+	width: 320px;
+}
+
+.ac-box5 {
+	display: flex;
+	justify-content: center;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+
+
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slick-prev:before,
+.slick-next:before {
+	color: #000;
+	/*黒にする*/
+	opacity: 1;
+	/*デフォルトは.75が指定されている*/
+}
+
+
+.section {
+	display: flex;
+	justify-content: center;
+	animation: fadeIn 5s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+
+	/*animation-nameで設定した値を書く*/
+	0% {
+		opacity: 0
+	}
+
+	/*アニメーション開始時は不透明度0%*/
+	100% {
+		opacity: 1
+	}
+
+	/*アニメーション終了時は不透明度100%*/
+}
+
+
+/*影をつける  */
+.img1 {
+	width: 55%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #333333;
+	background-color: #dddddd;
+	font-size: 50px;
+	border-radius: 10px;
+	box-shadow: 15px 15px 20px 0px rgba(0, 0, 0, 0.35);
+}
+
+
+.img2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #333333;
+	background-color: #dddddd;
+	font-size: 50px;
+	border-radius: 10px;
+	box-shadow: 15px 15px 20px 0px rgba(0, 0, 0, 0.35);
+	z-index: 0;
+}
+
+.img3 {
+	margin: 0;
+}
+
+/* フェードイン用のCSS */
+.fadeIn {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: all 1.5s 0s ease-out;
+}
+
+
+.fadeIn2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* width: 70%; */
+	opacity: 0;
+	transform: translateY(20px);
+	transition: all 1.5s 3s ease-out;
+	color: #000;
+}
+
+/* ハンバーガーメニュー */
+body {
+	overflow-x: hidden;
+	/* 追記 */
+}
+
+.header-area {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	align-items: center;
+	z-index: -9999;
+}
+
+.hamburger {
+	width: 40px;
+	height: 25px;
+	position: relative;
+	position: fixed;
+	top: auto;
+}
+
+.hamburger span {
+	position: absolute;
+	width: 100%;
+	height: 2.0px;
+	background-color: #000;
+	transition: .5s;
+}
+
+.hamburger span:first-of-type {
+	/* ハンバーガーメニューの1番目の線 */
+	top: 0;
+}
+
+.hamburger span:nth-of-type(2) {
+	/* ハンバーガーメニューの2番目の線 */
+	top: 50%;
+}
+
+.hamburger span:last-of-type {
+	/* ハンバーガーメニューの3番目の線 */
+	top: 100%;
+}
+
+
+.slider {
+	flex-wrap: wrap;
+	position: relative;
+	margin-top: 80px;
+	z-index: 000;
+}
+
+.s-box {
+	position: relative;
+	min-height: 15rem;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	padding-top: 128px;
+	padding-bottom: 128px;
+	background-image: url(../img/チーズとねずみ.jpg);
+}
+
+.s-box2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.hed-h2 {
+	font-size: 40px;
+	font-weight: 700;
+	color: red;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	margin: 0px;
+}
+
+.hed-span {
+	font-size: x-large;
+	font-weight: 700;
+	color: red;
+	display: flex;
+	justify-content: center;
+}
+
+.s-box3 {
+ 	position: relative;
+ 	min-height: 30rem;
+ 	background-size: cover;
+ 	background-position: center;
+ 	display: flex;
+ 	align-items: center;
+ 	padding-top: 128px;
+ 	padding-bottom: 128px;
+ 	background-image: url(../img/チーズとねずみ2.jpg);
+ }
+
+.s-box4 {
+	position: relative;
+	min-height: 15rem;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	padding-top: 128px;
+	padding-bottom: 128px;
+	background-image: url(../img/チーズとねずみ3.jpg);
+}
+
+.slide-menu {
+	display: flex;
+	justify-content: start;
+	flex-direction: column;
+	padding-left: 40px;
+	padding-top: 40px;
+	background-color: rgba(0, 0, 0, .8);
+	position: fixed;
+	top: 80px;
+	height: 100%;
+	width: 100%;
+	left: 80%;
+	transform: translateX(100%);
+	transition: .5s;
+	z-index: 9999;
+}
+
+.slide-menu li {
+	color: #fff;
+	line-height: 300%;
+	text-align: center;
+	z-index: 9998;
+}
+
+.suv {
+	display: flex;
+	justify-content: start;
+	align-items: start;
+}
+
+.suv:hover {
+	color: rgb(219, 39, 39);
+}
+
+.hamburger.active span:first-of-type {
+	/* ハンバーガーメニューの1番目の線 */
+	top: 50%;
+	transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-of-type(2) {
+	/* ハンバーガーメニューの2番目の線 */
+	opacity: 0;
+	/* 透明にする */
+}
+
+.hamburger.active span:last-of-type {
+	/* ハンバーガーメニューの3番目の線 */
+	top: 50%;
+	transform: rotate(-45deg);
+}
+
+.slide-menu.active {
+	transform: translateX(0);
+}
+
+
+/* トップページ開いた時にアニメーション */
+.start {
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+
+.start p {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 280px;
+}
+
+
+/* ヘッダー文字を順番に表示 */
+.flowing {
+
+	white-space: nowrap;
+	overflow: hidden;
+	animation: jojo 4s linear infinite;
+}
+
+@keyframes jojo {
+
+	from {
+
+		width: 0%;
+	}
+	to {
+
+	width: 100%;
+	}
+
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+	padding-left: 32px;
+	padding-right: 32px;
+	background-color: #a7a3a3;
+}
